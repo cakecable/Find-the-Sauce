@@ -2,7 +2,7 @@
 
 # Find The Sauce
 
-[![GitHub contributors](https://img.shields.io/github/contributors/cakecable/findthesauce.svg)](https://github.com/cakecable/Findthesauce)
+[![GitHub contributors](https://img.shields.io/github/contributors/cakecable/Find-the-Sauce.svg)](https://github.com/cakecable/Find-the-Sauce)
 
 **Find The Sauce** is an exciting single-player, decision-based game, originally developed as part of a submission for the **SkillsUSA competition**. This game places you in a dynamic, narrative-driven experience where your choices matter. Each decision impacts the storyline, leading to multiple possible outcomes that challenge your critical thinking and problem-solving skills.
 
