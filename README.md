@@ -23,4 +23,4 @@ We welcome contributions! Whether you want to help improve the code, suggest new
 
 ## 🧑‍💻 Developers
 
-**@cakecable** and **@xt0mic** are the creative minds behind Find The Sauce. With a passion for game development and narrative design, they we're committed to delivering a memorable gaming experience.
+**@cakecable** and **@xt0mic** are the creative minds behind Find The Sauce. With a passion for game development and narrative design, we are committed to delivering a memorable gaming experience.
