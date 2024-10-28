@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://1miw7wphmqru"]
+
+[ext_resource type="Texture2D" uid="uid://b0iwtve0l5owt" path="res://Assets/stickmanSprite.png" id="1_bwble"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v7q5c"]
+size = Vector2(42, 50)
+
+[node name="Bobby" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.999985, 0.999985)
+scale = Vector2(0.119444, 0.135884)
+texture = ExtResource("1_bwble")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_v7q5c")

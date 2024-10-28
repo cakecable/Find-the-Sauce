@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://csflpxmjpimct"]
+
+[ext_resource type="Texture2D" uid="uid://xfqcq3ipkpk8" path="res://Assets/lora.png" id="1_v1k1n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6aukt"]
+size = Vector2(51.5, 90.25)
+
+[node name="lora" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4.76837e-07, 0)
+scale = Vector2(0.153025, 0.142435)
+texture = ExtResource("1_v1k1n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.75, -1.125)
+shape = SubResource("RectangleShape2D_6aukt")
