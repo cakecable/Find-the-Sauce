@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://1miw7wphmqru"]
+[gd_scene load_steps=4 format=3 uid="uid://1miw7wphmqru"]
 
-[ext_resource type="Texture2D" uid="uid://b0iwtve0l5owt" path="res://Assets/stickmanSprite.png" id="1_bwble"]
+[ext_resource type="Script" path="res://Scripts/bobby.gd" id="1_8wfov"]
+[ext_resource type="Texture2D" uid="uid://b0iwtve0l5owt" path="res://Assets/Images/stickmanSprite.png" id="1_bwble"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v7q5c"]
 size = Vector2(42, 50)
 
 [node name="Bobby" type="CharacterBody2D"]
+script = ExtResource("1_8wfov")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-0.999985, 0.999985)
