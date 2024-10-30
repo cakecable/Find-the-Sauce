@@ -14,6 +14,14 @@ config/name="Find the Sauce"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.png"
 
+[autoload]
+
+InteractionManager="*res://Interactions/InteractionManager.tscn"
+
+[editor]
+
+version_control/autoload_on_startup=true
+
 [input]
 
 Left={

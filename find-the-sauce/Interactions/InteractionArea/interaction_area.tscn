@@ -4,3 +4,7 @@
 
 [node name="InteractionArea" type="Area2D"]
 script = ExtResource("1_m3iem")
+action_name = null
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
