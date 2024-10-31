@@ -18,12 +18,12 @@ func unregister_area(area: InteractionArea):
 	if index != -1:
 		active_areas.remove_at(index)
 
+@warning_ignore("unused_parameter")
 func _process(delta):
 	if active_areas.size() > 0 && can_interact:
 		active_areas.sort_custom(_sort_by_distance_to_player)
-		label.text = base_text + active_areas[0].gobal_name
-		label.text = base_text + active_areas[0].gobal_position
-		label.global_psotion.y -= 36
+		label.text = base_text + active_areas[0].name
+		label.global_position.y -= 36
 		label.global_position.x -= label.size.x / 2
 		label.show()
 	else:
@@ -41,5 +41,4 @@ func _input(event):
 			label.hide()
 			
 			await active_areas[0].interact.call()
-			
 			can_interact = true

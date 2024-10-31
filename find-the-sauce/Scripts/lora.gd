@@ -1,5 +1,15 @@
-extends CharacterBody2D
+extends Node2D
 
 
-func _physics_process(delta: float) -> void:
-	pass
+@onready var interaction_area: InteractionArea = $InteractionArea
+@onready var voice = preload("res://Assets/SFX/loravoice1.mp3")
+
+
+const line: Array[String] =  [
+	"Hey There!"
+]
+
+func _ready():
+	interaction_area.interact = Callable(self, "_on_interact")
+
+	
