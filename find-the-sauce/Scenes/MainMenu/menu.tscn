@@ -1,15 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://esmj4uolvxnp"]
+[gd_scene load_steps=4 format=3 uid="uid://esmj4uolvxnp"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_bydvp"]
 [ext_resource type="Texture2D" uid="uid://dfhww88cgwlnx" path="res://icon.png" id="2_hk77b"]
+[ext_resource type="AudioStream" uid="uid://bjq0r24x0kvwk" path="res://Assets/SFX/menuMusic.mp3" id="3_s87ai"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 507.0
-offset_top = 322.0
-offset_right = 547.0
-offset_bottom = 362.0
+offset_left = 910.0
+offset_top = 551.0
+offset_right = 950.0
+offset_bottom = 591.0
 script = ExtResource("1_bydvp")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
@@ -36,6 +37,12 @@ text = "Credits"
 position = Vector2(35, -61)
 scale = Vector2(0.0962963, 0.107931)
 texture = ExtResource("2_hk77b")
+
+[node name="ClickSound" type="AudioStreamPlayer2D" parent="."]
+
+[node name="MenuMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_s87ai")
+autoplay = true
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
