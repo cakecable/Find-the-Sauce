@@ -1,7 +1,7 @@
 extends Control
 
 func _ready() -> void:
-	$MenuMusic.play()
+	pass
 
 func _on_play_button_pressed() -> void:
 	$ClickSound.play()

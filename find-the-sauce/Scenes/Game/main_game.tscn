@@ -1,12 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://co50ruplwh7xi"]
+[gd_scene load_steps=4 format=3 uid="uid://co50ruplwh7xi"]
 
 [ext_resource type="PackedScene" uid="uid://1miw7wphmqru" path="res://Scenes/Characters/Bobby.tscn" id="1_endcs"]
 [ext_resource type="PackedScene" uid="uid://csflpxmjpimct" path="res://Scenes/Characters/lora.tscn" id="2_6tosw"]
+[ext_resource type="PackedScene" uid="uid://yyjgj2ywlk18" path="res://Scenes/GameComponents/InteractArea/interact_area.tscn" id="2_xpges"]
 
 [node name="MainGame" type="Node2D"]
 
 [node name="Bobby" parent="." instance=ExtResource("1_endcs")]
-position = Vector2(71, 82)
+position = Vector2(705, 311)
+
+[node name="InteractArea" parent="Bobby" instance=ExtResource("2_xpges")]
+position = Vector2(-644, -12)
 
 [node name="lora" parent="." instance=ExtResource("2_6tosw")]
-position = Vector2(541, 277)
+position = Vector2(399, 202)
+script = null
