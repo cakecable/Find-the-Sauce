@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dfhww88cgwlnx" path="res://icon.png" id="2_hk77b"]
 [ext_resource type="AudioStream" uid="uid://d1d76eh0osr6y" path="res://Assets/SFX/ClickSound.mp3" id="3_74ktp"]
 [ext_resource type="AudioStream" uid="uid://bjq0r24x0kvwk" path="res://Assets/SFX/menuMusic.mp3" id="3_s87ai"]
-[ext_resource type="Script" path="res://Scenes/MainMenu/menu_music.gd" id="5_3csjp"]
+[ext_resource type="Script" path="res://Scripts/menu_music.gd" id="5_3csjp"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
